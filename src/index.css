@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  /* Defining your semantic theme variables directly in CSS */
+  --color-brand-bg: #020617;        /* Deep canvas background */
+  --color-brand-surface: #0f172a;   /* Card / Tooltip background */
+  --color-brand-border: #1e293b;    /* Muted structural borders */
+  --color-brand-primary: #38bdf8;   /* Core accent (sky-400) */
+  --color-brand-success: #34d399;   /* Green accent (emerald-400) */
+
+  /* Defining typography conventions */
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+/* Base styles run naturally below the theme layer */
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-slate-100);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  letter-spacing: -0.01em;
+}
